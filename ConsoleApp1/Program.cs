@@ -1,5 +1,7 @@
 ﻿
 
+using System.Linq.Expressions;
+
 String[] carManufacturers = { "Ford", "Toyota", "BMW", "Honda" };
 
 Array.Sort(carManufacturers);
@@ -10,10 +12,21 @@ foreach (string car in carManufacturers)
     Console.WriteLine(car);
 }
 
-//for (int carIndex = 0; carIndex <= carManufacturers.Length; carIndex++)
+
+try{
+for (int carIndex = 0; carIndex <= carManufacturers.Length; carIndex++)
 {
-   // Console.WriteLine(carManufacturers[carIndex]);
+    Console.WriteLine(carManufacturers[carIndex]);
 }
+} catch(Exception e) {
+    Console.WriteLine($"Exception: {e.Message}");
+} finally
+{
+    Console.WriteLine("Array processing complete");
+}
+
+
+
 
 
 
@@ -52,3 +65,15 @@ inventory.Add("Gold coin", 200);
 
 inventory["Health potion"] = 20;
 
+try
+{
+    Console.WriteLine(inventory["Iron Sword"]);
+}
+catch (KeyNotFoundException e)
+{
+    Console.WriteLine($"Exception: {e.Message}");
+}
+finally
+{
+    Console.WriteLine("Inventory processing complete");
+}
