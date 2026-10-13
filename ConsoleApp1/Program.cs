@@ -1,6 +1,6 @@
 ﻿
-
 using ConsoleApp1;
+using System.ComponentModel.DataAnnotations;
 using System.Linq.Expressions;
 
 String[] carManufacturers = { "Ford", "Toyota", "BMW", "Honda" };
@@ -88,4 +88,9 @@ student1.Age = 20;
 
 List<Student> students = new List<Student>();
 students.Add(student1);
+
+Student student2 = student1;
+student2.Age = 99;
+
+student1.Display();
 
