@@ -50,4 +50,5 @@ inventory.Add("Health potion", 5);
 inventory.Add("Mana potion", 2);
 inventory.Add("Gold coin", 200);
 
+inventory["Health potion"] = 20;
 
