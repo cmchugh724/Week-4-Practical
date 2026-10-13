@@ -32,7 +32,7 @@ months.Add("October");
 months.Add("November");
 months.Add("December");
 
-
+Console.WriteLine(months.Count);
 
 
 
