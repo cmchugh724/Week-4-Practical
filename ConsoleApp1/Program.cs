@@ -34,6 +34,11 @@ months.Add("December");
 
 Console.WriteLine(months.Count);
 
+months.Remove("September");
+months.Remove("November");
+
+Console.WriteLine(months.Count);
+
 
 
 
