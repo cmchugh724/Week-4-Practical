@@ -46,6 +46,8 @@ String[] monthNamesArray = months.ToArray();
 
 Dictionary<string, int> inventory= new Dictionary<string, int>();
 
-
+inventory.Add("Health potion", 5);
+inventory.Add("Mana potion", 2);
+inventory.Add("Gold coin", 200);
 
 
