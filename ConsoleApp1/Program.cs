@@ -41,7 +41,10 @@ Console.WriteLine(months.Count);
 
 Console.WriteLine(months.IndexOf("December"));
 
+String[] monthNamesArray = months.ToArray();
 
+
+Dictionary<string, int> inventory= new Dictionary<string, int>();
 
 
 
