@@ -1,5 +1,6 @@
 ﻿
 
+using ConsoleApp1;
 using System.Linq.Expressions;
 
 String[] carManufacturers = { "Ford", "Toyota", "BMW", "Honda" };
@@ -77,3 +78,14 @@ finally
 {
     Console.WriteLine("Inventory processing complete");
 }
+
+
+//STUDENT//
+Student student1 = new Student();
+student1.ID = 1;
+student1.Name ="Alice Smith";
+student1.Age = 20;
+
+List<Student> students = new List<Student>();
+students.Add(student1);
+
