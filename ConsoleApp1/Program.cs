@@ -39,6 +39,10 @@ months.Remove("November");
 
 Console.WriteLine(months.Count);
 
+Console.WriteLine(months.IndexOf("December"));
+
+
+
 
 
 
